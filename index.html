@@ -35,13 +35,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <!-- ================= HEADER / NAVBAR ================= -->
 <header id="home" class="site-header">
     <nav class="navbar">
         <div class="nav-logo">
             <span class="brand-main">Sri Ganeshmoorthy</span>
             <span class="brand-sub">Enterprises</span>
+        </div>
+        <div class="menu-btn">
+            <img src="menu-icon.png" alt="menu" width="30">
         </div>
 
         <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -387,8 +389,18 @@
     </div>
 </footer>
 
+<script>
+const menuBtn = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('nav ul');
+
+menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+});
+</script>
+    
 <!-- Custom JS -->
 <script src="script.js"></script>
 </body>
 
 </html>
+
