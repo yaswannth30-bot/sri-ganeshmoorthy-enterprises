@@ -2,137 +2,326 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Mobile Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- SEO Title & Meta -->
     <title>Toner, Cartridge & Ribbon Refilling Service in Chennai</title>
-    <meta name="description" content="Affordable toner, cartridge and ribbon refilling and repair service in Chennai. No hidden charges. High-quality output for offices, shops and homes.">
-    <meta name="keywords" content="toner refilling chennai, cartridge refill chennai, ribbon refill chennai, toner repair, cartridge repair">
+    <meta name="description" content="Professional toner, cartridge and ribbon refilling and repair service in Chennai. Affordable, transparent pricing with no hidden charges. High-quality print output for offices, shops and home users.">
+    <meta name="keywords" content="toner refilling chennai, cartridge refill chennai, ribbon refill chennai, toner repair, cartridge repair, printing supplies chennai">
     <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Toner, Cartridge & Ribbon Refilling Service in Chennai">
+    <meta property="og:description" content="Affordable toner, cartridge and ribbon refilling & repair service in Chennai. No hidden charges. High-quality output for offices, shops and homes.">
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://sri-ganeshmoorthy-enterprises.vercel.app">
+    <meta property="og:image" content="https://images.pexels.com/photos/1957478/pexels-photo-1957478.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+    <!-- Canonical -->
     <link rel="canonical" href="https://sri-ganeshmoorthy-enterprises.vercel.app">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS -->
+    <script defer src="script.js"></script>
 </head>
 
 <body>
+    <!-- ================= HEADER / NAVBAR ================= -->
+    <header id="home" class="site-header">
+        <nav class="navbar">
+            <div class="nav-inner container">
+                <div class="nav-logo">
+                    <span class="brand-main">Sri Ganeshmoorthy</span>
+                    <span class="brand-sub">Enterprises</span>
+                </div>
 
-<header id="home" class="site-header">
-    <nav class="navbar">
-        <div class="nav-logo">
-            <span class="brand-main">Sri Ganeshmoorthy</span>
-            <span class="brand-sub">Enterprises</span>
-        </div>
+                <!-- Hamburger Button (Mobile) -->
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
 
-        <!-- HAMBURGER BUTTON -->
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="#who-we-serve" class="nav-link">Who We Serve</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
-        <!-- MOBILE / DESKTOP MENU -->
-        <ul class="nav-menu" id="navMenu">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#services" class="nav-link">Services</a></li>
-            <li><a href="#pricing" class="nav-link">Pricing</a></li>
-            <li><a href="#who-we-serve" class="nav-link">Who We Serve</a></li>
-            <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
+        <!-- ================= HERO SECTION ================= -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <p class="eyebrow">Toner • Cartridge • Ribbon</p>
+                    <h1>Toner, Cartridge & Ribbon Refilling Experts in Chennai</h1>
+                    <p class="hero-subtitle">
+                        Professional refilling & repair service with affordable, transparent pricing and 
+                        high-quality print output for government offices, private businesses and home users.
+                    </p>
 
-    <!-- HERO SECTION -->
-    <section class="hero section">
-        <div class="hero-inner">
-            <div class="hero-text">
-                <h1>Toner, Cartridge & Ribbon Refilling Experts in Chennai</h1>
-                <p class="hero-subtitle">Professional Refilling & Repair Service Across Chennai</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-phone-alt"></i>
+                            Book Refilling Now
+                        </a>
+                        <p class="hero-note">
+                            Total Cost = Service Charge + Equipment Cost (Drum, Ribbon, Spare Parts)
+                        </p>
+                    </div>
 
-                <a href="#contact" class="btn btn-glow">
-                    <i class="fas fa-phone-alt"></i> Book Refilling Now
-                </a>
+                    <div class="hero-badges">
+                        <span class="badge">
+                            <i class="fas fa-indian-rupee-sign"></i> Affordable Prices
+                        </span>
+                        <span class="badge">
+                            <i class="fas fa-file-invoice-dollar"></i> No Hidden Charges
+                        </span>
+                        <span class="badge">
+                            <i class="fas fa-print"></i> High-Quality Output
+                        </span>
+                    </div>
+                </div>
 
-                <div class="hero-badges">
-                    <span class="badge"><i class="fas fa-indian-rupee-sign"></i> Affordable Prices</span>
-                    <span class="badge"><i class="fas fa-file-invoice-dollar"></i> No Hidden Charges</span>
-                    <span class="badge"><i class="fas fa-print"></i> High-Quality Output</span>
+                <div class="hero-image">
+                    <div class="hero-image-card">
+                        <img src="https://images.pexels.com/photos/1957478/pexels-photo-1957478.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                             alt="Printer and toner cartridges on a desk">
+                    </div>
                 </div>
             </div>
+        </section>
+    </header>
 
-            <div class="hero-image">
-                <img src="https://images.pexels.com/photos/1957478/pexels-photo-1957478.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                     alt="Printer and toner cartridges">
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">
+                End-to-end refilling and repair solutions for your printing needs.
+            </p>
+
+            <div class="grid-3">
+                <div class="card service-card">
+                    <div class="icon-circle">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Toner Refilling</h3>
+                    <p>High-quality toner refilling for laser printers with sharp and consistent print output.</p>
+                </div>
+
+                <div class="card service-card">
+                    <div class="icon-circle">
+                        <i class="fas fa-fill-drip"></i>
+                    </div>
+                    <h3>Cartridge Refilling</h3>
+                    <p>Professional ink and laser cartridge refilling for all major brands and models.</p>
+                </div>
+
+                <div class="card service-card">
+                    <div class="icon-circle">
+                        <i class="fas fa-bars-staggered"></i>
+                    </div>
+                    <h3>Ribbon Refilling</h3>
+                    <p>Dot matrix and billing printer ribbon refilling for shops, offices and billing counters.</p>
+                </div>
+
+                <div class="card service-card">
+                    <div class="icon-circle">
+                        <i class="fas fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3>Toner & Cartridge Repair</h3>
+                    <p>Repair and replacement of toner & cartridge components. (Printer service not included.)</p>
+                </div>
             </div>
         </div>
     </section>
-</header>
 
-<!-- SERVICES -->
-<section id="services" class="section">
-    <h2>Our Services</h2>
-    <div class="cards">
-        <div class="card">Toner Refilling</div>
-        <div class="card">Cartridge Refilling</div>
-        <div class="card">Ribbon Refilling</div>
-        <div class="card">Toner/Cartridge Repair Only</div>
-    </div>
-</section>
+    <!-- ================= WHO WE SERVE ================= -->
+    <section id="who-we-serve" class="section section-muted">
+        <div class="container">
+            <h2 class="section-title">Who We Serve</h2>
+            <p class="section-subtitle">
+                Reliable refilling & repair support for all types of customers across Chennai.
+            </p>
 
-<!-- WHO WE SERVE -->
-<section id="who-we-serve" class="section">
-    <h2>Who We Serve</h2>
-    <div class="cards">
-        <div class="card">Government Offices</div>
-        <div class="card">Private Offices</div>
-        <div class="card">Home Users</div>
-        <div class="card">Xerox Shops</div>
-        <div class="card">Supermarkets</div>
-        <div class="card">Auditor Offices</div>
-        <div class="card">Hotels</div>
-        <div class="card">Restaurants</div>
-    </div>
-</section>
-
-<!-- PRICING -->
-<section id="pricing" class="section">
-    <h2>Pricing</h2>
-    <div class="cards">
-        <div class="card">Toner Refill — ₹XXX</div>
-        <div class="card">Cartridge Refill — ₹XXX</div>
-        <div class="card">Ribbon Refill — ₹XXX</div>
-        <div class="card">Repair — Depends on Issue</div>
-    </div>
-
-    <p class="note"><b>Total Cost = Service Charge + Equipment Cost (Drum, Ribbon, Spare Parts)</b></p>
-</section>
-
-<!-- TESTIMONIALS -->
-<section id="testimonials" class="section">
-    <h2>Customer Testimonials</h2>
-    <div class="cards">
-        <div class="card">“Good print quality.” ★★★★★</div>
-        <div class="card">“Affordable and clear output.” ★★★★★</div>
-        <div class="card">“Perfect for office use.” ★★★★☆</div>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-    <h2>Contact</h2>
-    <div class="cards">
-        <div class="card"><b>Call:</b> +91 XXXXXXXXXX</div>
-        <div class="card"><b>Payments:</b> Cash, PhonePe, GPay</div>
-        <div class="card">
-            <iframe src="YOUR_MAP_LINK" width="100%" height="180" style="border:0;"></iframe>
+            <div class="grid-4">
+                <div class="card small-card">
+                    <i class="fas fa-landmark"></i>
+                    <h3>Government Offices</h3>
+                </div>
+                <div class="card small-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Private Offices</h3>
+                </div>
+                <div class="card small-card">
+                    <i class="fas fa-house-user"></i>
+                    <h3>Home Users</h3>
+                </div>
+                <div class="card small-card">
+                    <i class="fas fa-copy"></i>
+                    <h3>Xerox Shops</h3>
+                </div>
+                <div class="card small-card">
+                    <i class="fas fa-store"></i>
+                    <h3>Supermarkets</h3>
+                </div>
+                <div class="card small-card">
+                    <i class="fas fa-file-invoice"></i>
+                    <h3>Auditor Offices</h3>
+                </div>
+                <div class="card small-card">
+                    <i class="fas fa-hotel"></i>
+                    <h3>Hotels</h3>
+                </div>
+                <div class="card small-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Restaurants</h3>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer>
-    <p>© 2025 Sri Ganeshmoorthy Enterprises</p>
-</footer>
+    <!-- ================= PRICING ================= -->
+    <section id="pricing" class="section">
+        <div class="container">
+            <h2 class="section-title">Transparent Pricing</h2>
+            <p class="section-subtitle">
+                Clear, honest pricing with no hidden charges. Final cost depends on model and condition.
+            </p>
 
+            <div class="grid-3">
+                <div class="card price-card">
+                    <h3>Toner Refill</h3>
+                    <p class="price">₹ XXX</p>
+                    <p class="price-note">Per cartridge • Model dependent</p>
+                </div>
+
+                <div class="card price-card">
+                    <h3>Cartridge Refill</h3>
+                    <p class="price">₹ XXX</p>
+                    <p class="price-note">Ink / Laser cartridges</p>
+                </div>
+
+                <div class="card price-card">
+                    <h3>Ribbon Refill</h3>
+                    <p class="price">₹ XXX</p>
+                    <p class="price-note">Billing / dot matrix printers</p>
+                </div>
+
+                <div class="card price-card">
+                    <h3>Repair Service</h3>
+                    <p class="price">Based on issue</p>
+                    <p class="price-note">Toner & cartridge repair only</p>
+                </div>
+            </div>
+
+            <div class="info-strip">
+                <i class="fas fa-circle-info"></i>
+                <span><strong>Total Cost = Service Charge + Equipment Cost</strong> (Drum, Ribbon, Spare Parts, etc.)</span>
+            </div>
+
+            <div class="info-strip secondary">
+                <i class="fas fa-clock"></i>
+                <span>Service time depends on the problem and model (not guaranteed same-day).</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section id="testimonials" class="section section-muted">
+        <div class="container">
+            <h2 class="section-title">Customer Feedback</h2>
+            <p class="section-subtitle">
+                Trusted by businesses and individuals for consistent print quality.
+            </p>
+
+            <div class="grid-3">
+                <div class="card testimonial-card">
+                    <p>“Print quality is very clear and consistent. Good service for our office.”</p>
+                    <div class="testimonial-meta">
+                        <span class="name">Office Admin</span>
+                        <span class="stars">★★★★★</span>
+                    </div>
+                </div>
+
+                <div class="card testimonial-card">
+                    <p>“Affordable pricing and no surprise extra charges. Very reliable refilling service.”</p>
+                    <div class="testimonial-meta">
+                        <span class="name">Xerox Shop Owner</span>
+                        <span class="stars">★★★★★</span>
+                    </div>
+                </div>
+
+                <div class="card testimonial-card">
+                    <p>“Perfect for our billing printers and daily usage. Recommended for small businesses.”</p>
+                    <div class="testimonial-meta">
+                        <span class="name">Supermarket Manager</span>
+                        <span class="stars">★★★★☆</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Contact & Payment</h2>
+            <p class="section-subtitle">
+                Reach us for booking refilling or repair service and payment options.
+            </p>
+
+            <div class="grid-3 contact-grid">
+                <div class="card contact-card">
+                    <h3><i class="fas fa-phone-alt"></i> Call</h3>
+                    <p class="contact-text">+91 XXXXXXXXXX</p>
+                    <p class="contact-caption">Call us for booking and enquiries.</p>
+                </div>
+
+                <div class="card contact-card">
+                    <h3><i class="fas fa-indian-rupee-sign"></i> Payment Options</h3>
+                    <ul class="payment-list">
+                        <li>Cash</li>
+                        <li>PhonePe</li>
+                        <li>GPay</li>
+                    </ul>
+                    <p class="contact-caption">Simple and convenient payment methods.</p>
+                </div>
+
+                <div class="card contact-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
+                    <p class="contact-caption">Chennai, Tamil Nadu</p>
+                    <div class="map-wrapper">
+                        <!-- Replace YOUR_MAP_LINK with your actual Google Maps embed URL -->
+                        <iframe 
+                            src="YOUR_MAP_LINK"
+                            width="100%" height="200" style="border:0;" 
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2025 Sri Ganeshmoorthy Enterprises. All rights reserved.</p>
+            <p class="footer-note">Toner, Cartridge & Ribbon Refilling & Repair Service • Chennai</p>
+        </div>
+    </footer>
 </body>
 </html>
