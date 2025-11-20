@@ -628,4 +628,42 @@ img {
     .section {
         padding: 3rem 0;
     }
+
+}
+/* Mobile Menu Fix */
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+
+    nav ul {
+        position: absolute;
+        top: 70px; /* below navbar */
+        right: 0;
+        width: 100%;
+        background: #0d1b2a; /* dark background */
+        flex-direction: column;
+        padding: 20px;
+        display: none; /* hidden initially */
+        z-index: 9999;
+    }
+
+    nav ul.open {
+        display: flex; /* show when toggled */
+    }
+
+    nav ul li a {
+        color: #fff;   /* white text on mobile menu */
+        padding: 10px 0;
+        font-size: 18px;
+        display: block;
+    }
+
+    /* Hamburger icon */
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+    }
 }
