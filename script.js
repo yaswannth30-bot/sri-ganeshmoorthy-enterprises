@@ -1,7 +1,17 @@
-// MOBILE MENU TOGGLE
+// Mobile navigation toggle
 const navToggle = document.getElementById("navToggle");
 const navMenu = document.getElementById("navMenu");
+const navLinks = document.querySelectorAll(".nav-link");
 
-navToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("open");
-});
+if (navToggle && navMenu) {
+    navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+    });
+
+    // Close menu when a link is clicked (on mobile)
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            navMenu.classList.remove("open");
+        });
+    });
+}
