@@ -2,4 +2,4 @@ User-agent:*
 Allow: /
 
 Sitemap:
-https://your-vercel-site.vercel.app/sitemap.xml
+https://sri-ganeshmoorthy-enterprises.vercel.app/sitemap.xml
