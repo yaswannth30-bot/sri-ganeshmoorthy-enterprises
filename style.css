@@ -417,47 +417,122 @@ body.dark-mode .form-group textarea {
 }
 
 /* ===================== CONTACT SECTION ===================== */
-.contact-flex {
+/* ===================== CONTACT GRID NEW ===================== */
+
+.contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-    gap: 22px;
-    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 26px;
+    margin-top: 35px;
 }
 
-.contact-box {
+.contact-card {
     background: #ffffff;
-    padding: 22px;
-    border-radius: 16px;
-    box-shadow: 0 10px 35px rgba(15,23,42,0.12);
-    transition: 0.3s;
+    padding: 28px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(15,23,42,0.12);
+    text-align: center;
+    transition: 0.3s ease;
 }
 
-.contact-box:hover {
-    transform: translateY(-4px);
-}
-
-body.dark-mode .contact-box {
+body.dark-mode .contact-card {
     background: #020617;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.6);
 }
 
-/* Call button */
-.call-btn {
-    display: inline-flex;
+.contact-card:hover {
+    transform: translateY(-6px);
+}
+
+/* Card icon */
+.card-icon {
+    background: #e0ecff;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
     align-items: center;
-    gap: 6px;
-    margin-top: 12px;
-    padding: 10px 20px;
-    background: linear-gradient(135deg, #0d6efd, #1d4ed8);
-    color: white;
-    border-radius: 50px;
-    font-weight: 600;
-    text-decoration: none;
+    justify-content: center;
+    font-size: 26px;
+    color: #1e3a8a;
+    margin-bottom: 14px;
 }
 
-.contact-number {
-    font-size: 20px;
+body.dark-mode .card-icon {
+    background: #1e293b;
+    color: #60a5fa;
+}
+
+/* Contact number */
+.highlight-number {
+    font-size: 22px;
     font-weight: 700;
-    margin-bottom: 10px;
+    color: #0f172a;
+    margin: 10px 0 15px;
+}
+
+body.dark-mode .highlight-number {
+    color: #e2e8f0;
+}
+
+/* Payment list */
+.payment-ul {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+}
+
+.payment-ul li {
+    margin: 6px 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Service areas grid */
+.service-areas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 18px 0 20px;
+}
+
+.service-areas-grid span {
+    background: #eff6ff;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #1e3a8a;
+    text-align: center;
+}
+
+body.dark-mode .service-areas-grid span {
+    background: #1e293b;
+    color: #bfdbfe;
+}
+
+/* Map box */
+.map-box {
+    margin-top: 15px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+body.dark-mode .map-box {
+    box-shadow: 0 14px 40px rgba(0,0,0,0.7);
+}
+
+/* Small note */
+.note {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 6px;
+}
+
+body.dark-mode .note {
+    color: #94a3b8;
 }
 
 /* ===================== FOOTER ===================== */
@@ -508,3 +583,4 @@ body.dark-mode .site-footer {
         margin-top: 20px;
     }
 }
+
