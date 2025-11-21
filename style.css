@@ -450,7 +450,90 @@ body.dark-mode .supply-item {
 body.dark-mode .supply-icon {
     background: #1e293b;
 }
+/* SUPPLY IMAGES */
+.supply-img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin: 0 auto 8px;
+    display: block;
+}
 
+.supply-item {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    transition: 0.2s;
+}
+
+.supply-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.15);
+}
+
+body.dark-mode .supply-item {
+    background: #020617;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.65);
+}
+
+/* CONTACT SECTION */
+.contact-flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.contact-box {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.11);
+    transition: 0.25s;
+}
+
+.contact-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 55px rgba(15, 23, 42, 0.16);
+}
+
+body.dark-mode .contact-box {
+    background: #020617;
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.75);
+}
+
+.contact-box-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-number {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.call-btn {
+    margin-top: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #0d6efd, #1d4ed8);
+    color: white;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.35);
+    transition: 0.2s;
+}
+
+.call-btn:hover {
+    transform: translateY(-2px);
+}
 /* Who we serve small cards */
 .small-card {
     text-align: center;
@@ -690,3 +773,4 @@ body.dark-mode .site-footer {
         padding: 46px 0;
     }
 }
+
