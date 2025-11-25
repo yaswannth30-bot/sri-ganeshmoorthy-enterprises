@@ -1,41 +1,30 @@
-/* =========================
-   MOBILE MENU TOGGLE
-========================= */
+/* ================= DARK MODE TOGGLE ================= */
+
+const themeToggle = document.getElementById("themeToggle");
+const body = document.body;
+
+themeToggle.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+
+    // Change icon (moon <-> sun)
+    const icon = themeToggle.querySelector("i");
+    if (body.classList.contains("dark-mode")) {
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+    } else {
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+    }
+});
+
+/* =============== MOBILE MENU =================== */
+
 const navToggle = document.getElementById("navToggle");
 const navMenu = document.getElementById("navMenu");
 
 navToggle.addEventListener("click", () => {
     navMenu.classList.toggle("open");
 });
-
-.navbar {
-    padding: 12px 20px;
-}
-
-/* =========================
-   DARK / LIGHT MODE
-========================= */
-const themeToggle = document.getElementById("themeToggle");
-const body = document.body;
-
-// Load saved theme
-if (localStorage.getItem("theme") === "dark") {
-    body.classList.add("dark-mode");
-}
-
-// Toggle theme
-themeToggle.addEventListener("click", () => {
-    body.classList.toggle("dark-mode");
-
-    // Save preference
-    if (body.classList.contains("dark-mode")) {
-        localStorage.setItem("theme", "dark");
-    } else {
-        localStorage.removeItem("theme");
-    }
-});
-
-
 /* =========================
    STAR RATING
 ========================= */
@@ -65,4 +54,5 @@ document.querySelectorAll(".nav-link").forEach(link => {
         navMenu.classList.remove("open");
     });
 });
+
 
