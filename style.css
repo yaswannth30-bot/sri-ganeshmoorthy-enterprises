@@ -34,6 +34,22 @@ img {
 }
 
 /* ===================== NAVBAR ===================== */
+.site-logo {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
 .navbar {
     background: #ffffff;
     padding: 12px 0;
@@ -583,4 +599,5 @@ body.dark-mode .site-footer {
         margin-top: 20px;
     }
 }
+
 
