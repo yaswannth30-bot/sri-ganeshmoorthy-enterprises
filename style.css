@@ -50,6 +50,27 @@ img {
     object-fit: cover;    /* clean fit */
     margin-left: 10px;    /* spacing from text */
 }
+/* Brand alignment with logo */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* space between logo & text */
+}
+
+/* Bigger circular logo */
+.brand-logo {
+    width: 60px;     /* increased size */
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Align brand text vertically */
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
 body.dark-mode .navbar {
     background: #020617;
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.7);
@@ -590,6 +611,7 @@ body.dark-mode .site-footer {
         margin-top: 20px;
     }
 }
+
 
 
 
