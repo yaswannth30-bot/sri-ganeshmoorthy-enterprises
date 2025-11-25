@@ -53,7 +53,17 @@ body.dark-mode .navbar {
     align-items: center;
     justify-content: space-between;
 }
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* space between menu, dark-mode, hamburger */
+}
 
+.nav-menu {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
 /* LOGO */
 .nav-logo {
     display: flex;
@@ -598,6 +608,7 @@ body.dark-mode .site-footer {
         margin-top: 20px;
     }
 }
+
 
 
 
