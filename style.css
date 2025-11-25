@@ -34,22 +34,6 @@ img {
 }
 
 /* ===================== NAVBAR ===================== */
-.site-logo {
-    height: 50px;
-    width: auto;
-    margin-right: 10px;
-}
-
-.nav-logo {
-    display: flex;
-    align-items: center;
-}
-
-.brand-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-}
 .navbar {
     background: #ffffff;
     padding: 12px 0;
@@ -58,7 +42,14 @@ img {
     z-index: 1000;
     box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
 }
-
+/* LOGO on Right Side */
+.brand-logo {
+    width: 45px;          /* size */
+    height: 45px;         /* size */
+    border-radius: 50%;   /* makes it circle */
+    object-fit: cover;    /* clean fit */
+    margin-left: 10px;    /* spacing from text */
+}
 body.dark-mode .navbar {
     background: #020617;
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.7);
@@ -599,5 +590,6 @@ body.dark-mode .site-footer {
         margin-top: 20px;
     }
 }
+
 
 
