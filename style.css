@@ -611,6 +611,36 @@ body.dark-mode .site-footer {
     }
 }
 
+/* LEFT SECTION */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-logo-img {
+    width: 42px;       /* Increase/Decrease logo size */
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav-logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+/* RIGHT SECTION */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.theme-toggle {
+    margin-left: 8px;
+}
 
 
 
