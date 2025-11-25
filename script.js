@@ -8,6 +8,9 @@ navToggle.addEventListener("click", () => {
     navMenu.classList.toggle("open");
 });
 
+.navbar {
+    padding: 12px 20px;
+}
 
 /* =========================
    DARK / LIGHT MODE
@@ -62,3 +65,4 @@ document.querySelectorAll(".nav-link").forEach(link => {
         navMenu.classList.remove("open");
     });
 });
+
