@@ -1,5 +1,4 @@
-User-agent:*
+User-agent: *
 Allow: /
 
-Sitemap:
-https://sri-ganeshmoorthy-enterprises.vercel.app/sitemap.xml
+Sitemap: https://sri-ganeshmoorthy-enterprises.vercel.app/sitemap.xml
